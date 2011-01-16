@@ -1,0 +1,16 @@
+package greatestCommonDivisor;
+
+
+public class EuclidTester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("EuclidTester");
+		
+		Euclid euklid = new Euclid(30, 21);
+		euklid.getGCD();
+		euklid.getAll();
+	}
+}

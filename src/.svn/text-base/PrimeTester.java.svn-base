@@ -1,0 +1,17 @@
+
+public class PrimeTester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int maxNumber = 10000000;
+		ClassicPrime findPrimtal = new ClassicPrime(maxNumber);
+		//ModuloPrime findPrimtal = new ModuloPrime(maxNumber);
+		System.out.println(maxNumber);
+		findPrimtal.findPrimes();
+		findPrimtal.show();
+	}
+
+}

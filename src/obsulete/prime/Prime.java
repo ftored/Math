@@ -1,0 +1,42 @@
+package obsulete.prime;
+
+public class Prime {
+
+	private boolean[] isPrime;
+	
+	public Prime(int maxNumber)
+	{
+		isPrime = new boolean[maxNumber - 1];
+
+		for (int i = 0; i <= isPrime.length - 1; i++)
+		{
+			isPrime[i] = true;
+		}
+	}
+	
+	public void find()
+	{
+		for (int i = 0; i <= isPrime.length - 1; i++) /** Change to Math.sqrt(maxNumber) */
+		{
+			if (isPrime[i] == true)
+			{
+				int maxJ = (int) (isPrime.length + 1.0) / (i + 2);
+				for (int j = 2; j <= maxJ; j++)
+				{
+					isPrime[j * (i + 2) - 2] = false;
+				}
+			}
+		}
+		
+		System.out.println("Primtallene mindre end " + (isPrime.length + 1) + " er:\n");
+		for (int i = 0; i <= isPrime.length - 1; i++)
+		{
+			if (isPrime[i] == true)
+			{
+				System.out.println(i + 2);
+			}
+		}
+		
+		return;
+	}
+}
