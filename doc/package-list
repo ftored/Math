@@ -1,7 +1,7 @@
 
-greatestCommonDivisor
-linearAlgebra.field
-linearAlgebra.matrix
-linearAlgebra.vector
+algebra
+algebra.linear.field
+algebra.linear.matrix
+algebra.linear.vector
+algebra.prime
 obsulete.prime
-prime

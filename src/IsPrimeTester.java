@@ -1,6 +1,6 @@
 
 
-import prime.IsPrime;
+import algebra.prime.IsPrime;
 
 
 public class IsPrimeTester {
@@ -9,6 +9,7 @@ public class IsPrimeTester {
 		
 		System.out.println("Main class: IsPrimeTester");
 		long testTal = 100663296000000001L;
+//		long testTal = 2;
 		IsPrime primtalTester = new IsPrime(testTal);
 		primtalTester.tellIfNumberIsPrime();
 	}

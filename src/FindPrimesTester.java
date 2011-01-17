@@ -1,6 +1,6 @@
 
 
-import prime.FindPrimes;
+import algebra.prime.FindPrimes;
 
 public class FindPrimesTester {
 

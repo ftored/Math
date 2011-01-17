@@ -1,4 +1,4 @@
-import linearAlgebra.matrix.*;
+import algebra.linear.matrix.*;
 
 
 public class MatrixTester {

@@ -1,4 +1,4 @@
-import linearAlgebra.vector.Rn;
+import algebra.linear.vector.DoubleVector;
 
 public class VectorTester {
 
@@ -10,9 +10,8 @@ public class VectorTester {
 		double[] argument1 = {1.0, 2.0, 3.0};
 		double[] argument2 = {3.0, 2.0, 1.0};
 		
-		Rn v1 = new Rn(argument1);
-		Rn v2 = new Rn(argument2);
-		Rn noVector = new Rn(3);
+		DoubleVector v1 = new DoubleVector(argument1);
+		DoubleVector v2 = new DoubleVector(argument2);
 		
 		System.out.println("Vektorerne er: ");
 		System.out.println("   " + v1.toString());
@@ -24,9 +23,8 @@ public class VectorTester {
 		if (v1.isOrthogonal(v2)) System.out.println("De er ortogonale");
 		else System.out.println("De er ikke ortogonale");
 
-		System.out.println("Summen er " + v1.getSum(v2));
-		System.out.println("Skalarproduktet er " + v1.getScalarProduct(v2));
-		System.out.println("Nulvektoren er: " + v1.getZero().toString());
-		System.out.println("Nulvektoren er: " + noVector.getZero().toString());
+		System.out.println("Summen er " + v1.add(v2));
+		System.out.println("Skalarproduktet er " + v1.getInnerProduct(v2));
+		System.out.println("Nulvektoren er: " + v1.zero().toString());
 	}
 }
